@@ -9,7 +9,7 @@ def connect_to_db():
         return mysql.connector.connect(
             host="localhost",
             user="root",
-            password="12345678",
+            password="YOUR_SQL_PASSWORD",
             database="StudentDB"
         )
     except mysql.connector.Error as e:
@@ -212,7 +212,7 @@ def add_student_gui():
     root.geometry("600x450")
     root.resizable(False, False)
 
-    background_image = Image.open("C:\\Users\\Abhishek\\Downloads\\background.jpg")
+    background_image = Image.open("Background_Image_Location")
     background_image = background_image.resize((600, 450), Image.LANCZOS)
     bg_image = ImageTk.PhotoImage(background_image)
 
